@@ -14,7 +14,7 @@ Once downloaded, move `TRON.lua` to your MoneyMoney Extensions folder.
 ## Account Setup in MoneyMoney
 
 * Add a new account of type “TRON”
-* Enter one or more Nano addresses in the username field (comma-separated)
+* Enter one or more TRON addresses in the username field (comma-separated)
 * Enter anything in the password field (just don’t leave it blank)
 
 ## Known Issues and Limitations
