@@ -20,3 +20,8 @@ Once downloaded, move `TRON.lua` to your MoneyMoney Extensions folder.
 ## Known Issues and Limitations
 
 * Always assumes EUR as base currency
+
+## Credits
+
+Powered by [CoinGecko API](https://www.coingecko.com/en/api) and [TRONSCAN](https://tronscan.org/)
+
