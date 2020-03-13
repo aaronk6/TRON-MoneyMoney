@@ -32,9 +32,10 @@ WebBanking{
 
 local currencyName = "TRON"
 local currency = "EUR" -- fixme: Don't hardcode
-local currencyField = "price_eur"
-local marketName = "CoinMarketCap"
-local priceUrl = "https://api.coinmarketcap.com/v1/ticker/tron/?convert=EUR"
+local currencyField = "eur"
+local currencyId = "tron"
+local marketName = "CoinGecko"
+local priceUrl = "https://api.coingecko.com/api/v3/simple/price?ids=" .. currencyId .. "&vs_currencies=" .. currencyField
 local accountUrl = "https://apilist.tronscan.org/api/account?address="
 local tokenUrl = "https://apilist.tronscan.org/api/token?showAll=1&id="
 local tokenNames = {}
@@ -160,7 +161,7 @@ end
 function queryPrices()
   local connection = Connection()
   local res = JSON(connection:request("GET", priceUrl))
-  return res:dictionary()[1]
+  return res:dictionary()[currencyId]
 end
 
 function queryAccounts(addresses)
