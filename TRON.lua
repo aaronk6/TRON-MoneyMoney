@@ -4,7 +4,7 @@
 -- Username: 76cf8a94..., fdea5932...
 -- Password: (anything)
 --
--- Copyright (c) 2020 aaronk6
+-- Copyright (c) 2024 aaronk6
 --
 -- Permission is hereby granted, free of charge, to any person obtaining a copy
 -- of this software and associated documentation files (the "Software"), to deal
@@ -25,7 +25,7 @@
 -- SOFTWARE.
 
 WebBanking{
-  version = 1.02,
+  version = 1.03,
   description = "Fetches balances from tronscan.org and returns them as securities",
   services = { "TRON" },
 }
