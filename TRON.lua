@@ -153,7 +153,7 @@ function createSecurity(address, name, symbol, balance, decimals, price)
     name = symbol .. description .. " · " .. address,
     currency = nil,
     market = marketName,
-    quantity = balance / math.pow(10, decimals),
+    quantity = balance / (10 ^ decimals),
     price = price
   }
 end
